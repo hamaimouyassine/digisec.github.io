@@ -1,0 +1,120 @@
+#membre {
+    width: 60%;
+    margin-left: 20%;
+    border-spacing: 20px 30px;
+}
+
+.line {
+    border-bottom: 2px solid #FFC222;
+}
+
+td {
+    text-align: center;
+}
+
+.arrondie {
+    background-color: rgb(61, 58, 58);
+    /*background-color: rgb(244, 239, 239);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(229, 224, 224);*/
+    border-radius: 10px;
+    height: 150px;
+    width: 100px;
+    animation: anim 2s;
+}
+
+.tit {
+    text-align: center;
+    color: #FFC222;
+}
+
+@keyframes anim {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translate(0%);
+    }
+}
+
+@keyframes anima {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translate(0%);
+    }
+}
+
+.poste {
+    color: #FFC222;
+    font-weight: bold;
+}
+
+.nom {
+    font-weight: bold;
+    height: 150px;
+    width: 150px;
+    border: 1px solid rgb(229, 224, 224);
+    border-radius: 10px;
+    background-color: rgb(244, 239, 239);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.poste {
+    height: 150px;
+    width: 150px;
+    border: 1px solid rgb(229, 224, 224);
+    border-radius: 10px;
+    background-color: rgb(244, 239, 239);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: anima 2s;
+}
+
+.arrondie:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 4px 8px #FFC222;
+}
+
+.poste:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 4px 8px #FFC222;
+}
+
+.nom:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 4px 8px #FFC222;
+}
+
+@media (max-width:768px) {
+    #membre {
+        width: 85%;
+        border-spacing: 5px 5px;
+        margin-left: 2%;
+    }
+
+    .imb {
+        width: 90px;
+        height: 90px;
+    }
+
+    .arrondie {
+        width: 73px;
+        font-size: small;
+    }
+
+    .poste {
+        width: 73px;
+        font-size: small;
+    }
+
+    .nom {
+        width: 73px;
+        font-size: small;
+    }
+}

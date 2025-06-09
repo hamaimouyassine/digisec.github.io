@@ -1,0 +1,62 @@
+.carte {
+    width: 50%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-left: 25%;
+    margin-bottom: 30px;
+    animation: animat 2s;
+}
+
+.center {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.imj {
+    height: 150px;
+    width: 150px;
+}
+
+.carte:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 4px 8px #FFC222;
+}
+
+.tr {
+    padding: 10px 5px;
+}
+
+@keyframes animat {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translate(0%);
+    }
+}
+
+.lien {
+    color: rgb(225, 100, 189);
+    text-decoration: none;
+    font-weight: 500;
+}
+.insta{
+    height: 53px;
+    width: 53px;
+}
+@media (max-width:768px) {
+    .carte {
+        width: 350px;
+        height: auto;
+        margin-left: 5%;
+    }
+    .tr {
+        margin: 0;
+        padding: 0;
+    }
+}
